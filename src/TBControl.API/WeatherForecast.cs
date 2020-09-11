@@ -1,6 +1,6 @@
 using System;
 
-namespace TB_Control.API
+namespace TBControl.API
 {
     public class WeatherForecast
     {
