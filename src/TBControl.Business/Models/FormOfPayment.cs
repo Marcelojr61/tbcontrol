@@ -6,9 +6,16 @@ namespace TBControl.Business.Models
 {
     public class FormOfPayment : Entity
     {
+        FormOfPayment()
+        {
+            this.SalesOrders = new HashSet<SalesOrder>();
+        }
+
         public string Type { get; set; }
 
         public Guid InstallmentTypeId { get; set; }
         public InstallmentType InstallmentType { get; set; }
+
+        public ICollection<SalesOrder> SalesOrders { get; set; }
     }
 }

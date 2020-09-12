@@ -17,5 +17,8 @@ namespace TBControl.Business.Models
 
         public Guid ProviderId { get; set; }
         public Provider Provider { get; set; }
+
+        public Guid TrackingId { get; set; }
+        public Tracking Tracking { get; set; }
     }
 }
