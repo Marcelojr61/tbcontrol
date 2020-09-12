@@ -13,7 +13,7 @@ namespace TBControl.Business.Models
 
         public string Type { get; set; }
 
-        public Guid InstallmentTypeId { get; set; }
+        public int InstallmentTypeId { get; set; }
         public InstallmentType InstallmentType { get; set; }
 
         public ICollection<SalesOrder> SalesOrders { get; set; }

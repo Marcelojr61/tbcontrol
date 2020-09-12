@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TBControl.Business.Models
 {
-    public class InstallmentType : Entity
+    public class InstallmentType
     {
         InstallmentType()
         {
