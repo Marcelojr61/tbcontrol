@@ -6,7 +6,6 @@ namespace TBControl.Business.Models
 {
     public abstract class Address : Entity
     {
-
         public string StreetAddress { get; set; }
         public string Number { get; set; }
         public string Complement { get; set; }
@@ -15,8 +14,5 @@ namespace TBControl.Business.Models
         public string Country { get; set; }
         public string City { get; set; }
         public string UF { get; set; }
-
-        public Provider Provider { get; set; }
-        public Client Client { get; set; }
     }
 }

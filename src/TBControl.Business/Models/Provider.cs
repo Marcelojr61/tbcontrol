@@ -10,7 +10,7 @@ namespace TBControl.Business.Models
         public string Document { get; set; }
         public bool Active { get; set; }
 
-        public Guid AddressId { get; set; }
-        public Address Address { get; set; }
+        public Guid AddressProviderId { get; set; }
+        public AddressProvider AddressProvider { get; set; }
     }
 }

@@ -9,16 +9,17 @@ namespace TBControl.Business.Models
         Client()
         {
             this.SalesOrders = new HashSet<SalesOrder>();
+            this.RegistrationDate = DateTime.Now;
         }
 
-        public string NameClient { get; set; }
+        public string Name { get; set; }
         public string CPF { get; set; }
         public DateTime Brithday { get; set; }
         public DateTime RegistrationDate { get; set; }
         public bool Active { get; set; }
 
-        public Guid AddressId { get; set; }
-        public Address Address { get; set; }
+        public Guid AddressClientId { get; set; }
+        public AddressClient AddressClient { get; set; }
 
         public ICollection<SalesOrder> SalesOrders { get; set; }
     }

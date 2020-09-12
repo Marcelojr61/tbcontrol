@@ -20,6 +20,11 @@ namespace TBControl.Data.Context
         {
         }
 
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+
+        }
+
 
 
     }
