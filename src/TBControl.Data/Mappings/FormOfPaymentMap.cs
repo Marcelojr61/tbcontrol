@@ -36,6 +36,10 @@ namespace TBControl.Data.Mappings
                 .HasForeignKey(x => x.InstallmentTypeId)
                 .IsRequired();
 
+            builder
+                .HasMany(x => x.SalesOrders)
+                .WithOne(x => x.FormOfPayment);
+
 
         }
     }

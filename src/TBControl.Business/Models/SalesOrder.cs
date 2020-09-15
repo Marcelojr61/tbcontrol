@@ -15,8 +15,8 @@ namespace TBControl.Business.Models
         public Guid ClientId { get; set; }
         public Client Client { get; set; }
 
-        public Guid ProductId { get; set; }
-        public Product Product { get; set; }
+        public Guid OrderedItemId { get; set; }
+        public OrderedItem OrderedItem { get; set; }
 
         public Guid FormOfPaymentId { get; set; }
         public FormOfPayment FormOfPayment { get; set; }

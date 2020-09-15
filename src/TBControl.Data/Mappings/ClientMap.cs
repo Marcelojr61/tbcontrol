@@ -57,8 +57,11 @@ namespace TBControl.Data.Mappings
 
             builder
              .HasOne(x => x.AddressClient)
-             .WithOne(x => x.Client)
-             .IsRequired();
+             .WithOne(x => x.Client);
+
+            builder
+                .HasMany(x => x.SalesOrders)
+                .WithOne(x => x.Client);
 
         }
     }
