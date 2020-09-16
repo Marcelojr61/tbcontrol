@@ -6,11 +6,18 @@ namespace TBControl.Business.Models
 {
     public class Provider : Entity
     {
-        public string ProviderName { get; set; }
+        public Provider()
+        {
+            this.PurchaseOrders = new HashSet<PurchaseOrder>();
+        }
+
+        public string Name { get; set; }
         public string Document { get; set; }
         public bool Active { get; set; }
 
         public Guid AddressProviderId { get; set; }
         public AddressProvider AddressProvider { get; set; }
+
+        public ICollection<PurchaseOrder> PurchaseOrders { get; set; }
     }
 }

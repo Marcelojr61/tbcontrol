@@ -19,8 +19,8 @@ namespace TBControl.Data.Mappings
 
             builder
                 .Property(x => x.Id)
-                .HasColumnName("id")
-                .HasColumnType("guid")
+                .HasColumnType("nvarchar(450)")
+                .HasMaxLength(450)
                 .IsRequired();
 
             builder

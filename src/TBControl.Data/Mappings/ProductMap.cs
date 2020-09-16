@@ -17,6 +17,12 @@ namespace TBControl.Data.Mappings
             builder
                 .HasKey(x => x.Id);
 
+            builder
+                .Property(x => x.Id)
+                .HasColumnName("id")
+                .HasColumnType("nvarchar(450)")
+                .HasMaxLength(450)
+                .IsRequired();
 
             builder
                 .Property(x => x.Name)

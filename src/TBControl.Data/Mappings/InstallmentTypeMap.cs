@@ -17,6 +17,12 @@ namespace TBControl.Data.Mappings
             builder
                 .HasKey(x => x.Id);
 
+            builder
+                .Property(x => x.Id)
+                .HasColumnName("id")
+                .HasColumnType("nvarchar(450)")
+                .HasMaxLength(450)
+                .IsRequired();
 
             builder
                 .Property(x => x.Interest)
@@ -28,7 +34,7 @@ namespace TBControl.Data.Mappings
             builder
                 .Property(x => x.Modality)
                 .HasColumnName("modality")
-                .HasColumnType("Varchar(10)")
+                .HasColumnType("varchar(10)")
                 .HasMaxLength(10)
                 .IsRequired();
 

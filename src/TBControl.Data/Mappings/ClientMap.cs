@@ -20,7 +20,8 @@ namespace TBControl.Data.Mappings
             builder
                 .Property(x => x.Id)
                 .HasColumnName("id")
-                .HasColumnType("guid")
+                .HasColumnType("nvarchar(450)")
+                .HasMaxLength(450)
                 .IsRequired();
 
             builder
@@ -38,26 +39,26 @@ namespace TBControl.Data.Mappings
                 .IsRequired();
 
             builder
-              .Property(x => x.Brithday)
-              .HasColumnName("brithday")
-              .HasColumnType("datetime");
+                .Property(x => x.Brithday)
+                .HasColumnName("brithday")
+                .HasColumnType("datetime");
 
             builder
-             .Property(x => x.RegistrationDate)
-             .HasColumnName("registration_date")
-             .HasColumnType("datetime")
-             .IsRequired();
+                .Property(x => x.RegistrationDate)
+                .HasColumnName("registration_date")
+                .HasColumnType("datetime")
+                .IsRequired();
 
 
             builder
-              .Property(x => x.Active)
-              .HasColumnName("is_active")
-              .HasColumnType("bit")
-              .IsRequired();
+                .Property(x => x.Active)
+                .HasColumnName("is_active")
+                .HasColumnType("bit")
+                .IsRequired();
 
             builder
-             .HasOne(x => x.AddressClient)
-             .WithOne(x => x.Client);
+                .HasOne(x => x.AddressClient)
+                .WithOne(x => x.Client);
 
             builder
                 .HasMany(x => x.SalesOrders)
