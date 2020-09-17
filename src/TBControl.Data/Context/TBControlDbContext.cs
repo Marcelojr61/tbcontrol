@@ -14,6 +14,7 @@ namespace TBControl.Data.Context
         public DbSet<SalesOrder> SalesOrders { get; set; }
         public DbSet<Address> Addresses { get; set; }
         public DbSet<PurchaseOrder> PurchaseOrders { get; set; }
+        public DbSet<OrderedItem> OrderedItems { get; set; }
 
         public TBControlDbContext(DbContextOptions<TBControlDbContext> options)
             : base(options)
