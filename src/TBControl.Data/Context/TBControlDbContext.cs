@@ -12,7 +12,8 @@ namespace TBControl.Data.Context
         public DbSet<InstallmentType> InstallmentTypes { get; set; }
         public DbSet<Tracking> Trackings { get; set; }
         public DbSet<SalesOrder> SalesOrders { get; set; }
-        public DbSet<Address> Addresses { get; set; }
+        public DbSet<AddressClient> AddressClients { get; set; }
+        public DbSet<AddressProvider> AddressProviders { get; set; }
         public DbSet<PurchaseOrder> PurchaseOrders { get; set; }
         public DbSet<OrderedItem> OrderedItems { get; set; }
 
